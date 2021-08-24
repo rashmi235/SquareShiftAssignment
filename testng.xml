@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="none" >
+
+    <test name="SquareShiftAssignment" >
+
+        <classes>
+            <class name="tests.TestScenario1_CNA"/>
+            <class name="tests.TestScenario2_CNA"/>
+            <class name="tests.TestScenario3_CNA"/>
+        </classes>
+    </test>
+</suite>
