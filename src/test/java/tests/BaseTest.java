@@ -17,7 +17,7 @@ public class BaseTest {
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator
                     + "drivers" + File.separator + "chromedriver");
             driver = new ChromeDriver();
-
+            driver.manage().window().maximize();
         } catch (Exception ex) {
             System.out.println("error: " + ex.getMessage());
             ex.printStackTrace();
