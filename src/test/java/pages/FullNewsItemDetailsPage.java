@@ -18,11 +18,6 @@ public class FullNewsItemDetailsPage {
         return element;
     }
 
-    public static WebElement readFullStorySection(WebDriver driver) {
-        element = driver.findElement(By.className("article__read-full-story-wrapper"));
-        return element;
-    }
-
     public static WebElement secondArticleHeadline(WebDriver driver) {
         element = driver.findElement(
                 By.xpath("//*[@id=\"block-mc-cna-theme-mainpagecontent\"]/article[3]/div[1]/div[2]/div/section/div/h1"));
