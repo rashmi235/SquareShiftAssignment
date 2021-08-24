@@ -21,9 +21,6 @@ public class TestScenario1_CNA extends BaseTest {
         CommonHelpers.scrollToTheBottomOfPage(driver);
         String secondArticleHeadline = FullNewsItemDetailsPage.secondArticleHeadline(driver)
                 .getText();
-        ((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('style','visibility:visible;');",
-                FullNewsItemDetailsPage.readFullStorySection(driver));
-
         FullNewsItemDetailsPage.secondArticleReadFullStoryButton(driver).click();
         Assert.assertEquals(secondArticleHeadline,
                 FullNewsItemDetailsPage.articleNavigationHeadLine(driver).getText(),

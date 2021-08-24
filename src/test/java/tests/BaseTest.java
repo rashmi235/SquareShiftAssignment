@@ -24,7 +24,7 @@ public class BaseTest {
         }
     }
 
-    @AfterSuite(alwaysRun = true)
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
         System.out.println("Closing The Browser Session after test execution");
         driver.quit();
