@@ -1,5 +1,5 @@
 # SquareShiftAssignment
 
 
-To run the tests execute testng.xml file.
+To run the tests execute mvn clean test.
 
